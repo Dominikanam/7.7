@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+@import url(https://fonts.googleapis.com/css?family=B612);
+
 * {
 	box-sizing: border-box;
 }
@@ -5,6 +8,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'B612', sans-serif;
 }
 
 .col-1 {width: 8.33%;}
@@ -35,9 +39,10 @@ body {
 }
 
 header {
-	background-image: url(https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 800px;
 }
 
 .logo {
@@ -46,13 +51,17 @@ header {
 }
 
 .logo h4 {
-    color: white;
-    display: inline-block;
+    color: #FED136;
+	display: inline-block;
+	font-family: 'Sofia';font-size: 30px;
+	font-style: italic;
 }
 
 .menu {
 	float: right;
 	display: inline-block;
+	font-size: 15px;
+	padding: 20px;
 }
 
 .menu ul li {
@@ -73,8 +82,36 @@ header {
 	font-size: 50px;
 }
 
+.jumbotron h3 {
+	font-weight: lighter;
+	font-style: italic;
+	font-family: 'Sofia';font-size: 50px;
+	padding: 15px;
+}
+
+.jumbotron h2 {
+	font-size: 100px;
+}
+
+.jumbotron button {
+	background-color: #FED136;
+	border: none;
+	height: 60px;
+	width: 200px;
+	color: white;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
 .services .icons {
 	display: flex;
+}
+
+.services .icons i, h4 {
+	color: #FFD328;
 }
 
 
