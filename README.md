@@ -1,2 +1,2 @@
 # 7.7
-Srodowisko developerskie
+srodowisko developerskie
