@@ -136,10 +136,6 @@ header {
 	color: #FFD328;
 }
 
-.services .icons i {
-	color: #FFD328;
-}
-
 .services h1 {
 	font-size: 40px;
 }
@@ -179,6 +175,49 @@ header {
 .portfolio .pictures img {
 	width: 350px;
 	height: 400px;
+}
+
+.about {
+	text-align: center;
+}
+
+.team {
+	text-align: center;
+	background-color: #F7F7F7;
+	display: inline-block;
+	width: 100%;
+}
+
+.team p {
+	color: #767676;
+	font-style: italic;
+}
+
+.contact {
+	text-align: center;
+}
+
+.workers .col-4 {
+	padding: 30px;
+}
+
+.workers .photo img {
+	border-radius: 50%;
+    overflow: hidden;
+    width: 230px;
+	position: relative;
+	height: 230px;
+	border: 7px solid white;
+	margin: 0;
+}
+
+.workers .photo p {
+	color: #767676;
+	font-style: italic;
+}
+
+.sponsors img {
+	width: 230px;
 }
 
 
