@@ -221,7 +221,25 @@ header {
 	height: 200px;
 }
 
+.contact {
+	background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/Black-World-Map-Wallpaper-2.jpg);
+	height: 800px;
+	color: white;
+	padding: 10px;
+}
 
+.contact h1 {
+	font-size: 40px;
+}
+
+.contact p {
+	color: #767676;
+	font-style: italic;
+}
+
+form {
+	height: 400px;
+}
 
 
 
