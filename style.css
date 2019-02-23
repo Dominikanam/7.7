@@ -11,6 +11,10 @@ body {
 	font-family: 'B612', sans-serif;
 }
 
+[class*=col-] {
+	float: left;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -27,8 +31,13 @@ body {
 .row::before,
 .row::after {
 	content: '';
-	display: inline-block;
+	display: block;
 	clear: both;
+}
+
+.row {
+	position: relative;
+	width: 100%;
 }
 
 .container {
@@ -118,18 +127,59 @@ header {
 }
 
 .services .icons i {
-	border: 2px solid #FFD328;
-	border-radius: 50px;
-	font-size: 50px;
-	padding: 10px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
 	text-align: center;
-}
-
-.services .icons i, h4 {
+	border-radius: 50%;
+	font-size: 30px;
 	color: #FFD328;
 }
 
+.services .icons i {
+	color: #FFD328;
+}
 
+.services h1 {
+	font-size: 40px;
+}
+
+.services p {
+	color: #767676;
+	font-style: italic;
+}
+
+.icons p {
+	font-style: initial;
+}
+
+.portfolio {
+	background-color: #F7F7F7;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.portfolio p {
+	color: #767676;
+	font-style: italic;
+}
+
+.portfolio .pictures .pic {
+	padding: 50px;
+}
+
+.portfolio .pictures .o {
+	display: inline-block;
+    width: 350px;
+    height: 500px;
+    border: none;
+    background-color: white;
+}
+
+.portfolio .pictures img {
+	width: 350px;
+	height: 400px;
+}
 
 
 
