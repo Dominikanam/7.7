@@ -59,13 +59,13 @@ header {
 .logo {
 	display: inline-block;
 
-}
+	h4 {
+		color: #FED136;
+		display: inline-block;
+		font-family: 'Sofia';font-size: 30px;
+		font-style: italic;
+	}
 
-.logo h4 {
-    color: #FED136;
-	display: inline-block;
-	font-family: 'Sofia';font-size: 30px;
-	font-style: italic;
 }
 
 .menu {
@@ -73,19 +73,21 @@ header {
 	display: inline-block;
 	font-size: 15px;
 	padding: 20px;
+
+	ul li {
+		list-style: none;
+		padding: 10px;
+		display: inline-block;
+
+		a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+	}
 }
 
-.menu ul li {
-	list-style: none;
-	padding: 10px;
-	display: inline-block;
-}
 
-.menu ul li a {
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-}
 
 .jumbotron h3, h2 {
     text-align: center;
@@ -120,22 +122,27 @@ header {
 
 .services h1, p {
 	text-align: center;
-}
 
-.services .icons {
-	display: flex;
-	text-align: center;
-	padding: 40px;
-}
+	.icons {
+		display: flex;
+		text-align: center;
+		padding: 40px;
 
-.services .icons i {
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-	border-radius: 50%;
-	font-size: 30px;
-	color: #FFD328;
+		i {
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			border-radius: 50%;
+			font-size: 30px;
+			color: #FFD328;
+		}
+
+		p {
+			font-style: initial;
+		}
+
+	}
 }
 
 .services h1 {
@@ -147,49 +154,47 @@ header {
 	font-style: italic;
 }
 
-.icons p {
-	font-style: initial;
-}
-
 .portfolio {
 	background-color: #F7F7F7;
 	text-align: center;
 	padding: 50px 0;
-}
 
-.portfolio p {
-	color: #767676;
-	font-style: italic;
-}
+	p {
+		color: #767676;
+		font-style: italic;
+	}
 
-.portfolio .pictures .pic {
-	padding: 50px;
-}
+	.pictures {
+		.pic {
+			padding: 50px;
+		}
 
-.portfolio .pictures .o {
-	display: inline-block;
-    width: 350px;
-    height: 500px;
-    border: none;
-    background-color: white;
-}
+		.o {
+			display: inline-block;
+			width: 350px;
+			height: 500px;
+			border: none;
+			background-color: white;
+		}
+		img {
+			width: 350px;
+			height: 400px;
+		}
+	}
 
-.portfolio .pictures img {
-	width: 350px;
-	height: 400px;
 }
 
 .about {
 	text-align: center;
-}
 
-.about img {
-	border-radius: 50%;
-    overflow: hidden;
-    width: 230px;
-	height: 230px;
-	border: 7px solid #F7F7F7;
-	margin: 0;
+	img {
+		border-radius: 50%;
+		overflow: hidden;
+		width: 230px;
+		height: 230px;
+		border: 7px solid #F7F7F7;
+		margin: 0;
+	}
 }
 
 .team {
@@ -197,23 +202,16 @@ header {
 	background-color: #F7F7F7;
 	display: inline-block;
 	width: 100%;
-}
 
-.team p {
-	color: #767676;
-	font-style: italic;
+	p {
+		color: #767676;
+		font-style: italic;
+	}
 }
 
 .contact {
 	text-align: center;
-
 }
-
-.contact .person {
-	justify-items: end;
-}
-
-
 
 .workers .col-4 {
 	padding: 30px;
@@ -245,19 +243,19 @@ header {
 	height: 800px;
 	color: white;
 	padding: 10px;
-}
 
-.contact h1 {
-	font-size: 40px;
-}
+	h1 {
+		font-size: 40px;
+	}
 
-.contact p {
-	color: #767676;
-	font-style: italic;
-}
+	p {
+		color: #767676;
+		font-style: italic;
+	}
 
-form {
-	height: 400px;
+	form {
+		height: 400px;
+	}
 }
 
 .social {
