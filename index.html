@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<title>Golden Studio</title>
@@ -34,7 +34,7 @@
 			<div class="container row">
 				<h1>SERVICES</h1>
 				<p>Proin iaculis purus consequat sem cure digni ssim.</p>
-				<div class="icons">
+				<div class="row">
 					<div class="col-4">
 						<i class="fas fa-trash-alt"></i>
 						<h4>E-Commerce</h4>
@@ -214,27 +214,22 @@
 			<h1>CONTACT US</h1>
 			<p>Proin iaculis purus consequat sem cure digni ssim.</p>
 			<form class="container" action="/action_page.php">
-				<div class="container">
+				<div class="row">
 					<div class="person col-6">
-						First name:<br>
-						<input type="text" name="firstname" value="Your name *">
-						<br>
-						Last name:<br>
-						<input type="text" name="e-mail" value="Your e-mail *">
-						<br>
-						Subject:<br>
-						<input type="text" name="subject" value="Your subject *">
-						<br><br>
+						<input type="text" name="firstname" placeholder="Your name *" />
+						<input type="text" name="e-mail" placeholder="Your e-mail *" />
+						<input type="text" name="subject" placeholder="Your subject *" />
 					</div>
-					<div class="message">
-						<textarea name="message" rows="10" cols="30">Your message *</textarea>
-						<br>
+					<div class="message col-6">
+						<textarea name="message" rows="10" cols="30" placeholder="Your message *"></textarea>
 					</div>
 				</div>
-				<div class="col-12">
-					<input type="submit" value="Send message">
+				<div class="row">
+					<div class="col-12">
+						<button>Send message</button>
+					</div>
 				</div>
-			  </form>
+			</form>
 		</section>
 		<footer>
 			<section class="social container">

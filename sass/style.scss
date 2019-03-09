@@ -45,8 +45,6 @@ body {
     position: relative;
     width: 80%;
 	margin: 0 auto;
-	justify-content: center;
-
 }
 
 header {
@@ -120,11 +118,21 @@ header {
 	font-size: 17px;
 }
 
-.services h1, p {
-	text-align: center;
+.services {
+	 h1, p {
+		text-align: center;
+	}
 
-	.icons {
-		display: flex;
+	h1 {
+		font-size: 40px;
+	}
+
+	p {
+		color: #767676;
+		font-style: italic;
+	}
+
+	& > div {
 		text-align: center;
 		padding: 40px;
 
@@ -143,15 +151,6 @@ header {
 		}
 
 	}
-}
-
-.services h1 {
-	font-size: 40px;
-}
-
-.services p {
-	color: #767676;
-	font-style: italic;
 }
 
 .portfolio {
@@ -209,21 +208,17 @@ header {
 	}
 }
 
-.contact {
-	text-align: center;
-}
-
 .workers .col-4 {
 	padding: 30px;
 }
 
 .workers .photo img {
-	border-radius: 50%;
-    overflow: hidden;
     width: 230px;
 	position: relative;
 	height: 230px;
 	border: 7px solid white;
+	border-radius: 50%;
+    overflow: hidden;
 	margin: 0;
 }
 
@@ -232,17 +227,19 @@ header {
 	font-style: italic;
 }
 
-.sponsors img {
-	height: 100px;
-	width: 100px;
-	align-items: center;
+.sponsors {
+	text-align: center;
+
+	img {
+		height: 100px;
+	}
 }
 
 .contact {
 	background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/Black-World-Map-Wallpaper-2.jpg);
-	height: 800px;
 	color: white;
 	padding: 10px;
+	text-align: center;
 
 	h1 {
 		font-size: 40px;
@@ -254,15 +251,47 @@ header {
 	}
 
 	form {
-		height: 400px;
+		height: 200px;
+		text-align: left;
+
+		.person, .message {
+			padding: 10px;
+
+			input, textarea {
+				display: block;
+				width: 100%;
+				padding: 10px;
+			}
+		}
+
+		.person {
+			input {
+				margin-top: 10px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.message {
+			textarea {
+				height: 140px;
+			}
+		}
+
+		button {
+			margin: 0 auto;
+			display: block;
+		}
 	}
 }
 
 .social {
 	padding: 20px;
 	width: 100%;
-	text-align: center;
-	padding: 0;
+	align-items: center;
+	padding: 0 10px;
 	display: flex;
 }
 
