@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+@import url(https://fonts.googleapis.com/css?family=B612);
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'B612', sans-serif;
+}
+
+[class*=col-] {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row::before,
+.row::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  padding: 0;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo h4 {
+  color: #FED136;
+  display: inline-block;
+  font-family: 'Sofia';
+  font-size: 30px;
+  font-style: italic;
+}
+
+.menu {
+  float: right;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.jumbotron h3, h2 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.jumbotron h3 {
+  font-weight: lighter;
+  font-style: italic;
+  font-family: 'Sofia';
+  font-size: 50px;
+  padding: 15px;
+}
+
+.jumbotron h2 {
+  font-size: 100px;
+}
+
+.jumbotron button {
+  background-color: #FED136;
+  border: none;
+  height: 60px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.services h1, .services p {
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.services p {
+  color: #767676;
+  font-style: italic;
+  margin-bottom: 80px;
+}
+
+.services .serviceItem {
+  padding: 20px;
+}
+
+.services > div {
+  text-align: center;
+  padding: 40px;
+}
+
+.services > div i {
+  width: 60px;
+  height: 60px;
+  line-height: 54px;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid #FFD328;
+  font-size: 30px;
+  color: #FFD328;
+}
+
+.services > div p {
+  font-style: initial;
+}
+
+.portfolio {
+  background-color: #F7F7F7;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.portfolio h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.portfolio p {
+  color: #767676;
+  font-style: italic;
+}
+
+.portfolio .pictures .pic {
+  padding: 50px;
+}
+
+.portfolio .pictures .o {
+  display: inline-block;
+  width: 350px;
+  height: 500px;
+  border: none;
+  background-color: white;
+}
+
+.portfolio .pictures img {
+  width: 350px;
+  height: 400px;
+}
+
+.about {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.about p {
+  color: #767676;
+  font-style: italic;
+}
+
+.about .history {
+  position: relative;
+}
+
+.about .history .line {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: solid 2px #F7F7F7;
+  left: calc(50% - 2px);
+}
+
+.about .history ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about .history ul li {
+  margin-top: 80px;
+}
+
+.about .history ul li:nth-of-type(odd) {
+  text-align: right;
+}
+
+.about .history ul li:nth-of-type(even) {
+  text-align: left;
+}
+
+.about .history ul li:nth-of-type(even) > div {
+  float: right;
+}
+
+.about .history ul li:last-of-type > div {
+  float: none;
+  margin: 0 auto;
+}
+
+.about .history ul li h2, .about .history ul li h3 {
+  margin: 0;
+}
+
+.about .history ul li h2 {
+  color: black;
+  font-size: 18px;
+  text-align: inherit;
+}
+
+.about .history ul li h3 {
+  font-size: 16px;
+}
+
+.about .history ul li p {
+  font-size: 14px;
+  color: #767676;
+  margin: 10px 0 0;
+}
+
+.about .history ul li div:last-of-type {
+  text-align: center;
+}
+
+.about .history ul li img, .about .history ul li .storyEnd {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  border: 7px solid #F7F7F7;
+  margin: 0;
+}
+
+.about .history ul li .storyEnd {
+  background-color: #FFD328;
+  color: white;
+  padding: 6px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team {
+  text-align: center;
+  background-color: #F7F7F7;
+  display: inline-block;
+  width: 100%;
+}
+
+.team h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.team p {
+  color: #767676;
+  font-style: italic;
+}
+
+.team .workers .col-4 {
+  padding: 30px;
+}
+
+.team .workers .photo img {
+  width: 230px;
+  position: relative;
+  height: 230px;
+  border: 7px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.team .workers .photo p {
+  color: #767676;
+  font-style: italic;
+}
+
+.team .workers .photo .icon-btn {
+  border: 3px solid black;
+  background-color: white;
+}
+
+.sponsors {
+  text-align: center;
+}
+
+.sponsors img {
+  height: 100px;
+}
+
+.contact {
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/Black-World-Map-Wallpaper-2.jpg);
+  color: white;
+  padding: 10px;
+  height: 500px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.contact p {
+  color: #767676;
+  font-style: italic;
+}
+
+.contact form {
+  height: 200px;
+  width: 700px;
+  text-align: left;
+}
+
+.contact form .person, .contact form .message {
+  padding: 10px;
+}
+
+.contact form .person input, .contact form .person textarea, .contact form .message input, .contact form .message textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact form .person input {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.contact form .person input:first-child {
+  margin-top: 0;
+}
+
+.contact form .message textarea {
+  height: 140px;
+  border-radius: 5px;
+}
+
+.contact form button {
+  margin: 0 auto;
+  display: block;
+  background-color: #FED136;
+  border: none;
+  height: 60px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+footer .social {
+  padding: 20px;
+  width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 10px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social .icon-btn {
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.icon-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
